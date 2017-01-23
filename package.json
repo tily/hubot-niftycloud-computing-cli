@@ -1,0 +1,15 @@
+{
+  "name": "hubot-niftycloud-computing-cli",
+  "version": "0.0.0",
+  "description": "Hubot script for NIFTYCloud Computing CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coffee": "^3.3.0",
+    "hubot": "^2.19.0"
+  }
+}
