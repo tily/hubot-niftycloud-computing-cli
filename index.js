@@ -35,8 +35,8 @@ endpoints.forEach((endpoint)=> {
 console.log('Regions loaded: ', regionEndpoint);
 
 module.exports = (robot)=> {
-  robot.respond(/ncccli help( (.+))?/, (message)=> {
-    let keyword, lines = ["* nccli help (keyword)"];
+  robot.respond(/ncccli .help( (.+))?/, (message)=> {
+    let keyword, lines = ["* nccli .help (keyword)"];
 
     if(message.match[2]) keyword = message.match[2];
 
@@ -58,7 +58,7 @@ module.exports = (robot)=> {
 
     console.log([region, command, args].join(", "))
 
-    if(message.match[1] == 'help') return;
+    if(message.match[1] == '.help') return;
     if(!regionEndpoint[region]) return message.reply("Error: region does not exist");
     if(!commands[command]) return message.reply("Error: command does not exist");
 
