@@ -1,10 +1,6 @@
 const spawnSync = require('child_process').spawnSync;
 const exec = require('child_process').exec;
 
-process.env.LANG = 'ja_JP.utf-8';
-process.env.LANGUAGE = 'ja_JP:ja';
-process.env.LC_ALL = 'ja_JP.utf-8';
-
 const endpoints = [
   'https://uscp.cloud.nifty.com/api/',
   'https://cp.cloud.nifty.com/api/',
