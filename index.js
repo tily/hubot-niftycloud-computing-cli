@@ -41,7 +41,7 @@ module.exports = (robot)=> {
     if(message.match[2]) keyword = message.match[2];
 
     for(command in commands) {
-      line = `* nccli [region-name] ${command} (args1 args2)`;
+      line = `* nccli [region-name] ${command} (args)`;
       if(keyword) {
         if(command.match(new RegExp(keyword))) lines.push(line);
       } else {
