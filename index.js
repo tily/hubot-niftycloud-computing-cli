@@ -56,8 +56,6 @@ module.exports = (robot)=> {
         command = message.match[2],
         args = message.match[4] || "";
 
-    console.log([region, command, args].join(", "))
-
     if(message.match[1] == '.help') return;
     if(!regionEndpoint[region]) return message.reply("Error: region does not exist");
     if(!commands[command]) return message.reply("Error: command does not exist");
